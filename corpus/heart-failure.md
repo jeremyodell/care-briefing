@@ -1,0 +1,34 @@
+---
+doc_type: condition-briefing
+condition: Heart Failure
+status: draft
+retrieved_on: "2026-08-28"
+last_validated_on: "2026-08-28"
+---
+
+# Heart Failure
+
+## Standard of Care
+
+The current U.S. standard is the 2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure, which for the first time defines "four pillars" of guideline-directed medical therapy (GDMT) for heart failure with reduced ejection fraction (HFrEF, LVEF ≤40%): (1) an ARNI (preferred), ACE inhibitor, or ARB for renin-angiotensin system inhibition; (2) a beta-blocker; (3) a mineralocorticoid receptor antagonist (MRA); and (4) an SGLT2 inhibitor — the newly added fourth pillar — with the guideline recommending rapid, simultaneous initiation of all four classes rather than sequential titration ([2022 AHA/ACC/HFSA Guideline, Circulation](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063); [ACC 10 Points to Remember](https://www.acc.org/latest-in-cardiology/ten-points-to-remember/2022/03/29/19/53/2022-aha-acc-hfsa-heart-failure-guideline-gl-hf)).
+
+For heart failure with mildly reduced or preserved ejection fraction (HFmrEF/HFpEF, LVEF ≥40%), evidence has historically been thinner than for HFrEF, but SGLT2 inhibitors are now guideline-recommended across the full LVEF range: empagliflozin was approved for heart failure regardless of ejection fraction based on the EMPEROR-Preserved trial ([Innovations in CRM](https://www.innovationsincrm.com/latest-news/1925-us-fda-approves-jardiance-empagliflozin)), and in July 2025 the FDA approved finerenone (Kerendia), a nonsteroidal MRA, specifically for adults with LVEF ≥40% — the first nonsteroidal MRA approved for this population — based on the FINEARTS-HF trial, which showed a 16% relative risk reduction in cardiovascular death plus total heart failure events versus placebo ([ACC FDA Update](https://www.acc.org/Latest-in-Cardiology/Articles/2025/07/15/20/01/FDA-Update-Finerenone-Approved); [Bayer press release](https://www.bayer.com/en/us/news-stories/fda-approves-kerendia)). This approval is treated by cardiology commentators as a turning point that begins to bring HFpEF pharmacotherapy toward parity with HFrEF's four-pillar model ([HCPLive](https://www.hcplive.com/view/finerenone-s-fda-approval-marks-a-turning-point-in-hfpef-management)).
+
+## Emerging Treatments in Development
+
+- **Baxdrostat + dapagliflozin (AstraZeneca)** — Baxdrostat is a first-in-class, highly selective aldosterone synthase inhibitor. The Phase III PREVENT-HF trial (NCT06677060) is testing baxdrostat added to dapagliflozin, versus dapagliflozin alone, to reduce incident heart failure and cardiovascular death in high-risk patients with type 2 diabetes and cardiovascular disease ([ClinicalTrials.gov NCT06677060](https://clinicaltrials.gov/study/NCT06677060); [AstraZeneca trial page](https://www.astrazenecaclinicaltrials.com/study/D6973C00001/)).
+- **Balcinrenone/dapagliflozin combination (AstraZeneca)** — A fixed-dose combination of balcinrenone (a novel mineralocorticoid receptor modulator) and dapagliflozin. The Phase III BalanceD-HF trial (NCT06307652), run with Duke Clinical Research Institute and led by Dr. Robert J. Mentz, is recruiting roughly 4,800 patients with chronic heart failure and impaired kidney function across the full LVEF range, comparing the combination against dapagliflozin alone, with results expected by June 2027 ([Duke Clinical Research Institute](https://dcri.org/balanced-hf)).
+- **Ziltivekimab (Novo Nordisk)** — A fully human monoclonal antibody targeting interleukin-6 to reduce cardiovascular inflammation. After the broader ZEUS trial in atherosclerotic/CKD populations missed its primary MACE endpoint in 2026, the heart-failure-specific Phase III HERMES trial (NCT05636176) continues, testing ziltivekimab in roughly 5,600 patients with HFpEF/HFmrEF and systemic inflammation, with topline results expected in the first half of 2027 ([European Journal of Heart Failure, ATHENA/HERMES design paper](https://academic.oup.com/eurjhf/advance-article/doi/10.1093/ejhf/xuag153/8671775); [STAT News on ZEUS miss](https://www.statnews.com/2026/07/31/novo-nordisk-inflammation-heart-disease-ziltivekimab/)).
+
+**Recently approved, newly part of the standard of care:**
+- **Sotagliflozin (Inpefa, Lexicon Pharmaceuticals)** — FDA-approved May 26, 2023 as the first dual SGLT1/SGLT2 inhibitor for heart failure, based on the SOLOIST-WHF and SCORED Phase 3 trials (nearly 12,000 patients combined); SOLOIST-WHF showed a 33% reduction in the composite of HF hospitalization, urgent HF visit, and cardiovascular death in patients recently hospitalized for worsening heart failure ([HFSA/Lexicon announcement](https://hfsa.org/lexicon-announces-fda-approval-inpefatm-sotagliflozin-treatment-heart-failure); [ACC FDA Update](https://www.acc.org/latest-in-cardiology/articles/2023/06/05/18/34/fda-update-sotagliflozin-approved-for-broad)).
+- **Finerenone (Kerendia, Bayer)** — FDA-approved July 14, 2025 for HF with LVEF ≥40% (see Standard of Care above).
+
+## Key Companies & Institutions
+
+- **AstraZeneca** — Sponsors two of the most notable Phase III heart-failure candidates in development: baxdrostat (aldosterone synthase inhibitor, PREVENT-HF trial) and the balcinrenone/dapagliflozin combination (BalanceD-HF trial) ([AstraZeneca Clinical Trials](https://www.astrazenecaclinicaltrials.com/study/D6973C00001/); [Duke Clinical Research Institute](https://dcri.org/balanced-hf)).
+- **Novo Nordisk** — Developer of ziltivekimab, an anti-IL-6 monoclonal antibody, currently in the Phase III HERMES trial for HFpEF/HFmrEF with systemic inflammation ([EJHF trial design paper](https://academic.oup.com/eurjhf/advance-article/doi/10.1093/ejhf/xuag153/8671775)).
+- **Bayer** — Manufacturer of finerenone (Kerendia), the first nonsteroidal MRA approved for HF with LVEF ≥40%, based on the company-sponsored FINEARTS-HF trial ([Bayer press release](https://www.bayer.com/en/us/news-stories/fda-approves-kerendia)).
+- **Lexicon Pharmaceuticals** — Developer of sotagliflozin (Inpefa), the first dual SGLT1/2 inhibitor approved for heart failure ([HFSA/Lexicon announcement](https://hfsa.org/lexicon-announces-fda-approval-inpefatm-sotagliflozin-treatment-heart-failure)).
+- **Duke Clinical Research Institute (DCRI)** — Academic coordinating center for the AstraZeneca-sponsored BalanceD-HF trial, led by principal investigator Dr. Robert J. Mentz ([Duke Clinical Research Institute](https://dcri.org/balanced-hf)).
+- **American College of Cardiology / American Heart Association / Heart Failure Society of America (ACC/AHA/HFSA)** — Joint authors of the 2022 U.S. heart failure management guideline that defines the current four-pillar GDMT standard ([2022 AHA/ACC/HFSA Guideline, Circulation](https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063)).

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Care Briefing — Build Status</title>
+<style>
+  :root{
+    --bg:#0b0d14; --bg2:#13161f; --card:#1b1e2d; --card2:#222638;
+    --border:#363b54; --text:#e8ecf4; --text2:#c4cad8; --muted:#7a8499;
+    --blue:#0D4BA0; --blue-bright:#1a63c8; --blue-accent:#4b9ef5;
+    --purple:#6c62c0; --purple2:#9b91d9;
+    --green:#34d27a; --amber:#f5a623; --red:#f06060;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:'Inter','Segoe UI',system-ui,sans-serif;
+    line-height:1.5;
+  }
+  code, .mono{font-family:'Fira Code',Consolas,monospace;}
+  .wrap{max-width:920px; margin:0 auto; padding:40px 24px 80px;}
+
+  .hero{
+    background:linear-gradient(135deg, var(--blue) 0%, var(--purple) 100%);
+    border-radius:14px; padding:28px 32px; margin-bottom:28px;
+    box-shadow:0 8px 24px rgba(0,0,0,0.35);
+  }
+  .hero .eyebrow{
+    text-transform:uppercase; letter-spacing:.08em; font-size:12px;
+    color:rgba(255,255,255,0.75); font-weight:600; margin:0 0 6px;
+  }
+  .hero h1{margin:0 0 6px; font-size:26px; color:#fff;}
+  .hero p{margin:0; color:rgba(255,255,255,0.85); font-size:14px;}
+
+  .clock{
+    display:flex; align-items:center; gap:10px; margin-top:16px;
+    background:rgba(0,0,0,0.2); border-radius:8px; padding:10px 14px;
+    width:fit-content;
+  }
+  .clock .dot{width:10px; height:10px; border-radius:50%; background:var(--amber); flex:none;}
+  .clock span{color:#fff; font-size:13px; font-weight:600;}
+
+  h2{
+    font-size:15px; text-transform:uppercase; letter-spacing:.06em;
+    color:var(--blue-accent); margin:32px 0 12px; font-weight:700;
+  }
+
+  .status-row{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:8px;}
+  .status-card{
+    flex:1; min-width:150px; background:var(--card); border:1px solid var(--border);
+    border-radius:10px; padding:14px 16px;
+  }
+  .status-card .label{font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em;}
+  .status-card .value{font-size:15px; color:var(--text); margin-top:4px; font-weight:600;}
+  .badge{
+    display:inline-block; font-size:11px; font-weight:700; padding:2px 8px;
+    border-radius:20px; margin-top:6px;
+  }
+  .badge.green{background:rgba(52,210,122,0.15); color:var(--green);}
+  .badge.amber{background:rgba(245,166,35,0.15); color:var(--amber);}
+
+  .card{
+    background:var(--card); border:1px solid var(--border); border-radius:10px;
+    padding:18px 20px; margin-bottom:12px;
+  }
+  .card h3{margin:0 0 8px; font-size:14px; color:var(--text);}
+  .card p{margin:0; color:var(--text2); font-size:14px;}
+  .tag{
+    display:inline-block; font-size:11px; font-weight:600; color:var(--purple2);
+    background:rgba(108,98,192,0.15); border-radius:4px; padding:2px 7px; margin-left:6px;
+  }
+
+  ol.steps{list-style:none; margin:0; padding:0; counter-reset:step;}
+  ol.steps li{
+    counter-increment:step; position:relative; padding:12px 16px 12px 46px;
+    background:var(--card); border:1px solid var(--border); border-radius:10px;
+    margin-bottom:8px; font-size:14px; color:var(--text2);
+  }
+  ol.steps li::before{
+    content:counter(step); position:absolute; left:14px; top:50%; transform:translateY(-50%);
+    width:22px; height:22px; border-radius:50%; background:var(--blue-bright); color:#fff;
+    font-size:12px; font-weight:700; display:flex; align-items:center; justify-content:center;
+  }
+  ol.steps li.done{opacity:0.55;}
+  ol.steps li.done::before{background:var(--green); content:"✓";}
+  ol.steps li .time{color:var(--muted); font-size:12px; margin-left:8px;}
+
+  .pill-row{display:flex; gap:8px; flex-wrap:wrap; margin-top:6px;}
+  .pill{
+    background:var(--card2); border:1px solid var(--border); border-radius:20px;
+    padding:5px 12px; font-size:13px; color:var(--text2);
+  }
+
+  footer{margin-top:36px; color:var(--muted); font-size:12px; text-align:center;}
+
+  @media print{
+    body{background:#fff; color:#111;}
+    .hero{background:#0D4BA0; box-shadow:none;}
+    .card, .status-card, ol.steps li{background:#f5f5f7; border-color:#ccc; box-shadow:none; color:#111;}
+    .card p, .status-card .value{color:#111;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <p class="eyebrow">AI Prototype Challenge — Healthcare Scenario</p>
+    <h1>Care Briefing — Build Status</h1>
+    <p>Structured, cited condition briefings for a health system strategy team — adapted from the towncrier civic-advisor harness.</p>
+    <div class="clock"><div class="dot"></div><span>~1 hour remaining on the build clock</span></div>
+  </div>
+
+  <h2>At a Glance</h2>
+  <div class="status-row">
+    <div class="status-card">
+      <div class="label">Scenario</div>
+      <div class="value">Healthcare</div>
+    </div>
+    <div class="status-card">
+      <div class="label">Design</div>
+      <div class="value">Approved <span class="badge green">Locked</span></div>
+    </div>
+    <div class="status-card">
+      <div class="label">Build</div>
+      <div class="value">Not started <span class="badge amber">Next</span></div>
+    </div>
+    <div class="status-card">
+      <div class="label">Runtime</div>
+      <div class="value">Streamlit + Claude API</div>
+    </div>
+  </div>
+
+  <h2>Approach</h2>
+  <div class="card">
+    <h3>Adapt, don't build from scratch <span class="tag">key decision</span></h3>
+    <p>Strip the towncrier civic-advisor harness to its two highest-value roles: a <strong>Researcher</strong> (cite-or-decline, adapted from <code>advisor.md</code>) and a <strong>Publisher</strong> (self-contained HTML export, near-verbatim from <code>publisher.md</code>). Pitch line: a production-shaped harness, retargeted to a new domain in under two hours.</p>
+  </div>
+  <div class="card">
+    <h3>Pre-loaded corpus, not live web search</h3>
+    <p>One markdown file per condition (frontmatter + 3 cited sections: Standard of Care, Emerging Treatments, Key Companies &amp; Institutions). No live-internet dependency during the interview. Claude synthesizes the on-screen briefing from only that file's content — an out-of-corpus question gets an explicit decline, not a fabricated answer.</p>
+  </div>
+  <div class="card">
+    <h3>Demo conditions</h3>
+    <div class="pill-row">
+      <span class="pill">Type 2 Diabetes</span>
+      <span class="pill">Heart Failure</span>
+      <span class="pill">Rheumatoid Arthritis</span>
+      <span class="pill">Multiple Myeloma</span>
+    </div>
+  </div>
+
+  <h2>Build Sequence</h2>
+  <ol class="steps">
+    <li class="done">Scenario, approach, and corpus/runtime design approved <span class="time">done</span></li>
+    <li>Curate 4 corpus markdown files with real sourced content <span class="time">~20 min</span></li>
+    <li>Build the Streamlit app — corpus loader, cite-or-decline synthesis, structured UI <span class="time">~25 min</span></li>
+    <li>End-to-end test, including the deliberate out-of-corpus decline case <span class="time">~10 min</span></li>
+    <li>One pitch slide <span class="time">~5 min</span></li>
+    <li>Stretch: "Publish" button exporting the on-screen briefing as HTML <span class="time">if time remains</span></li>
+  </ol>
+
+  <footer>care-briefing · internal build tracker · not a client deliverable</footer>
+</div>
+</body>
+</html>
