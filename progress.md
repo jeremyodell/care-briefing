@@ -478,3 +478,12 @@ Jeremy hit `🚫 Key Companies & Institutions — The synthesis call failed
   attempt 1 to fail, ran `run_researcher` against a real live API call —
   confirmed exactly 2 calls made, attempt 2 recovered cleanly (`status:
   ok`, 8 bullets, no error surfaced). 48/48 tests still pass.
+
+### Committed to GitHub (Jeremy's request)
+Repo initialized and pushed: **https://github.com/jeremyodell/care-briefing**
+(private, `master`, initial commit `fed083f`, account `jeremyodell` /
+jeremyodell@gmail.com — the github.com login in `gh auth status`, not the
+Denali GHE account). `.gitignore` excludes `__pycache__/`, `.pytest_cache/`,
+`*.log`, `.env`, `.venv/`. Secret scan before commit: no `sk-ant-` strings
+in any tracked file — the app reads keys from env vars only. Commit from
+here on with the same identity; this progress.md itself is tracked.
