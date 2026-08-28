@@ -481,7 +481,7 @@ Jeremy hit `🚫 Key Companies & Institutions — The synthesis call failed
 
 ### Committed to GitHub (Jeremy's request)
 Repo initialized and pushed: **https://github.com/jeremyodell/care-briefing**
-(private, `master`, initial commit `fed083f`, account `jeremyodell` /
+(**public** as of Aug 28 for sharing with the interview panel; `master`, initial commit `fed083f`, account `jeremyodell` /
 jeremyodell@gmail.com — the github.com login in `gh auth status`, not the
 Denali GHE account). `.gitignore` excludes `__pycache__/`, `.pytest_cache/`,
 `*.log`, `.env`, `.venv/`. Secret scan before commit: no `sk-ant-` strings
